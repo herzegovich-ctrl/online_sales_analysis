@@ -1,0 +1,74 @@
+# Ignore config file
+config.json
+
+# Python bytecode, caches and virtual envs
+__pycache__/
+*.py[cod]
+*$py.class
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environment folders
+ENV/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# PyCharm
+*.iml
+.idea/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Test / coverage
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+pytest_cache/
+
+# Logs and temp files
+*.log
+tmp/
+temp/
+*.swp
+*.tmp
+
+# OS files (Windows + macOS)
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Sensitive / local config
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# VS Code settings and history
+.history/
+
+# Python byte-compiled extensions
+*.so
+
+# Other
+*.bak
+*.orig
