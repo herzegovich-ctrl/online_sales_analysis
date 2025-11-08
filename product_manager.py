@@ -3,7 +3,6 @@ from product import Product
 
 
 class ProductManager:
-
     def __init__(self):
         self.products: List[Product] = []
 
@@ -23,3 +22,11 @@ class ProductManager:
 
     def total_inventory_value(self) -> float:
         return sum(p.total_value() for p in self.products)
+
+    def remove_product_by_name(self, name: str) -> bool:
+        target = name.lower()
+        for i, p in enumerate(self.products):
+            if p.name.lower() == target:
+                del self.products[i]
+                return True
+        return False
